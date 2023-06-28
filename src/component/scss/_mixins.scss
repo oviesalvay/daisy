@@ -1,0 +1,19 @@
+@mixin flexbox {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin padding {
+    padding: 1rem clamp(1rem, 6vw, 6rem);
+}
+
+@mixin sign {
+    background-color: #8C52FF;
+    padding: 1rem 2rem;
+    border-radius: 20px;
+    border: none;
+    color: white;
+    margin: 0 2rem;
+}
