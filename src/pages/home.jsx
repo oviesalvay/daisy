@@ -1,4 +1,4 @@
-import '../styles/'
+import '../styles/home.scss';
 import innovation from '../assest/innovation.svg';
 import innovate from '../assest/innovate.svg';
 import Rectangle from '../assest/Rectangle.svg';
@@ -7,12 +7,13 @@ import Customised from '../component/customised';
 import Signature from '../component/signature';
 import About from '../component/about';
 import Footer from '../component/footer';
+import React from 'react';
 
 const Home = () => {
     return (
         <section className="introduction">
             <div className='intro'>
-                <div>
+                <div className="intro-to">
                     <h1>Build the Website of Your Dreams</h1>
                     <p>Experience the freedom of design as you effortlessly
                         shape every element, customize every detail, and bring your

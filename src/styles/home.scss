@@ -1,5 +1,21 @@
 @import '../component/scss/mixins';
 
-.introduction {
-    @include flexbox;
+.intro {
+    @include padding;
+    @include flexbox-space-between-wrap;
+    background: linear-gradient(256.92deg, rgba(140, 82, 255, 0.8) -11.18%, #7544D4 -5.39%, rgba(217, 197, 255, 0.8) 12.26%,
+            #E8DCFF 23.87%, rgba(197, 168, 255, 0.8) 50.64%, #E8DCFF 99.15%);
+
+    .intro-to {
+        flex-basis: 450px;
+    }
+
+    .intro-to p {
+        color: #1C1033;
+
+    }
+
+    .sign {
+        @include sign;
+    }
 }

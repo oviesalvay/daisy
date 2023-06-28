@@ -4,7 +4,7 @@ import './App.scss';
 import Navbar from './component/navbar';
 import Footer from './component/footer';
 import Home from './pages/home';
-import Login from '../src/pages/register/login';
+// import Login from '../src/pages/register/login';
 
 const App = () => {
   return (

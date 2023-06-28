@@ -1,4 +1,5 @@
 import logo from '../assest/logo.svg';
+import React from 'react';
 
 const Footer = () => {
     return (
@@ -6,7 +7,7 @@ const Footer = () => {
             <div>
                 <h5>Products</h5>
                 <ul>
-                    <>Website Builder</>
+                    <li>Website Builder</li>
                     <li>Create a Blog</li>
                 </ul>
             </div>

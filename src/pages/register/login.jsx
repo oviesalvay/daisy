@@ -1,5 +1,6 @@
 import Frame from '../../assest/Frame.svg';
 import logo from '../../assest/logo.svg';
+import React from 'react';
 
 const Login = () => {
     return (

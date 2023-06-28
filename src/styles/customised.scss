@@ -1,0 +1,23 @@
+@import '../component/scss/mixins';
+
+.template {
+    @include flexbox-align-center;
+    background: #F8F5FF;
+    @include padding;
+
+    .template-intro {
+        flex-basis: 450px;
+    }
+
+    .daisy {
+        flex-basis: 450px;
+
+        ul li {
+            margin: 1rem 0;
+        }
+
+        .find {
+            @include find;
+        }
+    }
+}

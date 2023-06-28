@@ -1,6 +1,7 @@
+import React from "react";
+import '../styles/navbar.scss';
 import { NavLink } from "react-router-dom";
 import logo from '../assest/logo.svg';
-import '../styles/navbar.scss';
 
 const Navbar = () => {
 
@@ -14,7 +15,7 @@ const Navbar = () => {
                     <NavLink to='/about' className='navlink'>About</NavLink>
                 </div>
                 <div>
-                    <button>login</button>
+                    <button>Login</button>
                     <button className="sign">Sign Up</button>
                 </div>
             </nav>
