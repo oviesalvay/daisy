@@ -1,0 +1,21 @@
+@import '../scss/_mixins';
+
+.about-us {
+    @include flexbox-space-between-wrap;
+    padding: 7rem 3rem 7rem 3rem;
+    background: #FCF5FF;
+
+    figure {
+        flex-basis: 500px;
+    }
+
+    .about {
+        @include padding-bottom;
+
+        flex-basis: 500px;
+
+        .find {
+            @include find;
+        }
+    }
+}

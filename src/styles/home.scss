@@ -1,0 +1,57 @@
+@import '../scss/__mixins.scss';
+
+.introduction {
+
+
+    .intro {
+        @include flexbox-space-between-wrap;
+        background: linear-gradient(256.92deg, rgba(140, 82, 255, 0.8) -11.18%, #7544D4 -5.39%, rgba(217, 197, 255, 0.8) 12.26%,
+                #E8DCFF 23.87%, rgba(197, 168, 255, 0.8) 50.64%, #E8DCFF 99.15%);
+        position: relative;
+        @include padding-top;
+
+        .intro-to {
+            flex-basis: 450px;
+            @include padding-bottom;
+        }
+
+        .intro-to>img {
+            flex-basis: 450px;
+        }
+
+        .intro-to p {
+            color: #1C1033;
+
+        }
+
+        .sign {
+            @include sign;
+            font-size: 1rem;
+        }
+
+        .joy {
+            // position: absolute;
+            top: 10rem;
+        }
+    }
+}
+
+@media screen and (max-width: 1077px) {
+    .introduction {
+        .intro {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            .joy,
+            .rectangled,
+            .slider {
+                display: none;
+            }
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
+}

@@ -1,0 +1,76 @@
+@import '../scss/_mixins';
+
+header {
+    background-color: #130B22;
+    @include padding;
+    position: relative;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+
+    nav {
+        @include flexbox-space-between-wrap;
+
+        .nav-words {
+            @include flexbox-gap
+        }
+
+        .navlink {
+            margin: 0 1rem;
+            color: white;
+            text-decoration: none;
+        }
+
+        button {
+            color: transparent;
+            background-color: #130B22;
+            border: none;
+            color: white;
+        }
+
+        .sign {
+            @include sign;
+        }
+
+        .hamburger {
+            // display: none;
+        }
+    }
+}
+
+@media screen and (max-width:1077px) {
+    header {
+        padding: 2rem;
+
+        .nav-content {
+            position: absolute;
+            height: fit-content;
+            top: 100%;
+            right: -100%;
+            background: linear-gradient(256.92deg, rgba(140, 82, 255, 0.8) -11.18%, #7544D4 -5.39%, rgba(217, 197, 255, 0.8) 12.26%, #E8DCFF 23.87%, rgba(197, 168, 255, 0.8) 50.64%, #E8DCFF 99.15%);
+            padding: 1rem 0;
+            transition: all ease .8s;
+            border-radius: 20%;
+
+            .navlink {
+                max-width: 800px;
+                flex-direction: column;
+                text-align: center;
+                color: #130B22;
+            }
+        }
+
+        .active {
+            right: 0;
+        }
+
+        .login {
+            display: none;
+        }
+
+    }
+
+    .hamburger {
+        display: block;
+    }
+}

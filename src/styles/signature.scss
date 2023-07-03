@@ -1,0 +1,41 @@
+@import '../scss/_mixins';
+
+.sign {
+    position: relative;
+
+    .signature {
+        background: #F9F7FD;
+        @include flexbox-space-between-wrap;
+        @include padding;
+
+        .generate-signature {
+            @include padding-bottom;
+            flex-basis: 450px;
+        }
+
+        ul li {
+            margin: 1rem;
+        }
+
+        figure {
+            flex-basis: 450px;
+            @include padding-bottom
+        }
+
+        .find {
+            @include find;
+        }
+    }
+
+    .joygirl {
+        @include flexbox-gap;
+        background-color: white;
+        position: absolute;
+        // width: 5%;
+        bottom: 1rem;
+        right: 26rem;
+        @include padding-left;
+        border-radius: 22px;
+    }
+
+}

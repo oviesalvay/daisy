@@ -1,0 +1,39 @@
+@import '../scss/_mixins';
+
+.template {
+    @include flexbox-align-center;
+    background: #F8F5FF;
+    @include padding;
+    margin: 2rem 0;
+
+    .template-intro {
+        @include padding-bottom;
+        flex-basis: 450px;
+    }
+
+    .daisy {
+        flex-basis: 450px;
+
+        ul li {
+            margin: 1rem;
+        }
+
+        .find {
+            @include find;
+        }
+    }
+}
+
+@media screen {
+    .template {
+
+        h2 {
+            font-size: 1.2rem;
+        }
+
+        .template-intro {
+            padding: 2rem 0;
+        }
+
+    }
+}

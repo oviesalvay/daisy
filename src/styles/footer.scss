@@ -1,0 +1,30 @@
+@import '../scss//_mixins';
+
+footer {
+    @include flexbox-space-between-wrap;
+    @include padding-top;
+    background: #130B22;
+
+    div {
+        flex-basis: 200px;
+    }
+
+    ul li {
+        color: #B8B8B8;
+        list-style: none;
+        margin: 1rem 0;
+    }
+
+    p {
+        color: #B8B8B8;
+    }
+
+    form {
+
+        select {
+            padding: .5rem 3rem .4rem .3rem;
+            background: #130B22;
+            color: #B8B8B8;
+        }
+    }
+}
