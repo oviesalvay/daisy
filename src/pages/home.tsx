@@ -7,7 +7,6 @@ import joy from '../assets/joy.png';
 import Customised from '../component/customised';
 import Signature from '../component/signature';
 import About from '../component/about';
-import Navbar from '../component/navbar';
 
 
 const Home = () => {
