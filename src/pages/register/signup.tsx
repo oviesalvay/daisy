@@ -1,6 +1,7 @@
 import Navbar from '../../component/navbar';
 import logo from '../../assets/logo.svg';
 import framed from '../../assets/framed.svg';
+import Footer from '../../component/footer';
 
 const Signup = () => {
     return (
@@ -28,6 +29,7 @@ const Signup = () => {
                     <img src={framed} alt="" />
                 </div>
             </section>
+            <Footer />
         </>
     )
 }
